@@ -1,0 +1,393 @@
+AI E-commerce Optimization Platform
+Demo MVP Scope
+1. Demo Objective
+Build a lightweight AI-powered e-commerce optimization platform that demonstrates:
+Shopify data → AI analysis → actionable business recommendations
+The demo should make a potential client understand the product within 5–10 minutes.
+2. Demo Flow
+The complete demo flow should be:
+Login
+  ↓
+Connect / Select Shopify Store
+  ↓
+Dashboard
+  ↓
+AI analyzes store data
+  ↓
+AI Recommendations
+  ↓
+Recommendation Details
+  ↓
+Suggested Action
+For the demo, Shopify data can be real or mocked, depending on development time.
+3. Features Required
+A. Login
+Simple authentication screen.
+1
+For demo purposes:
+Email
+Password
+Login
+No need for:
+Complex user roles
+Team management
+SSO
+Advanced account settings
+4. Shopify Connection
+Create a simple Connect Shopify experience.
+For the demo, this can either:
+Option A — Real Shopify connection
+Connect to a development Shopify store and pull basic data.
+Option B — Demo mode
+Use preloaded/mock Shopify data.
+Recommended for the client demo:
+Support a demo store with realistic data.
+The UI can still show:
+Shopify Connected ✓
+This ensures the demo is reliable even without depending on a live Shopify account.
+5. Dashboard
+The dashboard only needs a few key metrics.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+2
+KPI Cards
+Revenue
+Orders
+Average Order Value
+Customers
+Example:
+Revenue          $124,820
+Orders           2,184
+AOV              $57.15
+Customers        1,842
+AI Summary
+Show something like:
+AI analyzed your store and identified 7 opportunities.
+Then display the top 3–5 recommendations.
+6. AI Recommendations
+This is the main feature of the demo.
+Create recommendation cards such as:
+Recommendation 1 — Pricing
+Increase Product X price by 5%
+Show:
+Current price
+Suggested price
+Relevant sales data
+AI explanation
+Confidence
+Recommendation 2 — Product Performance
+Product Y has declining performance
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+3
+Show:
+Revenue change
+Sales change
+Previous vs current period
+AI explanation
+Suggested action
+Recommendation 3 — Cross-Sell
+Customers buying Product X are likely to buy Product Y
+Show:
+Number of relevant customers
+Products
+AI-generated recommendation
+Suggested campaign
+Recommendation 4 — Inventory
+Product Z may run out of stock soon
+Show:
+Current inventory
+Sales velocity
+Estimated days remaining
+Recommended action
+Recommendation 5 — Customer Campaign
+Target customers who purchased X but haven't purchased Y
+Show:
+Audience size
+Recommended product
+Suggested offer
+Suggested campaign message
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+4
+7. Recommendation Detail
+Clicking a recommendation opens a detail page/modal.
+Keep it simple:
+Product X — Pricing Opportunity
+Recommendation
+Increase price by 5%
+Why?
+Sales have increased 14% while demand remains
+strong and discounting has decreased.
+Supporting Data
+Revenue       +18%
+Units Sold    +11%
+Discounts      -8%
+AI Suggested Action
+Test a 5% price increase.
+[Mark as Done]    [Dismiss]
+The important part is showing why the AI made the recommendation.
+8. AI Chat — Demo Feature
+Include a small AI chat panel if time permits.
+Example questions:
+Which products should I focus on?
+Why are sales declining?
+Who should I target with a campaign?
+What should I do this week?
+The AI responds using the demo store's dataset.
+5
+This provides a strong demonstration of the conversational AI layer without building a complete AI agent.
+9. Data Required
+Only prepare enough data to make the demo believable.
+Products
+Product name
+Price
+Units sold
+Revenue
+Inventory
+Orders
+Order date
+Customer
+Products
+Revenue
+Customers
+Customer
+Orders
+Total spend
+Products purchased
+Reviews
+Rating
+Review text
+That's enough for the demo.
+10. AI Logic
+Do not build sophisticated ML infrastructure for the demo.
+Use a combination of:
+Basic analytics/rules
+For example:
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+6
+Revenue ↓ significantly
++
+Orders ↓
++
+Traffic/other available metric stable
+=
+Potential conversion problem
+LLM
+Use the LLM to:
+Explain findings
+Generate recommendations
+Generate campaign ideas
+Summarize reviews
+Answer questions about the data
+This creates the appearance and experience of an intelligent optimization platform without over-
+engineering the backend.
+11. Demo Data
+Prepare one realistic Shopify store dataset.
+Example store:
+Fashion / Apparel
+Products:
+Premium Hoodie
+Running Shoes
+Denim Jacket
+Cotton T-Shirt
+Leather Backpack
+Running Socks
+Sports Cap
+Travel Bag
+Create enough historical data to demonstrate:
+Increasing products
+Declining products
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+7
+Cross-sell relationships
+Low inventory
+Customer segments
+Review problems
+The data should intentionally contain clear business opportunities so the AI has something meaningful to
+identify.
+12. Pages Required
+Only build these screens:
+1. Login
+2. Dashboard
+3. Recommendations
+4. Recommendation Detail
+5. AI Chat
+6. Basic Settings / Shopify Connection
+That's sufficient for the demo.
+13. Explicitly Exclude From Demo MVP
+Do not spend time building:
+Production-grade Shopify synchronization
+Multiple Shopify stores
+Meta Ads integration
+Google Ads integration
+Klaviyo integration
+Email sending
+Automatic price changes
+Automatic campaign execution
+Advanced forecasting
+Competitor analysis
+Complex customer segmentation
+Custom ML models
+Mobile application
+Billing/subscriptions
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+8
+Team management
+Advanced permissions
+Enterprise security
+Complex analytics/report builder
+Full marketing automation
+These are post-demo features.
+14. Suggested Demo Architecture
+Keep the architecture simple:
+             Demo Shopify Data
+                    │
+                    ▼
+             ┌─────────────┐
+             │   Database  │
+             └──────┬──────┘
+                    │
+                    ▼
+             ┌─────────────┐
+             │  Analytics  │
+             │    Logic    │
+             └──────┬──────┘
+                    │
+                    ▼
+             ┌─────────────┐
+             │  AI / LLM   │
+             └──────┬──────┘
+                    │
+                    ▼
+             ┌─────────────┐
+             │  Dashboard  │
+             │     +       │
+             │Recommendations
+             └─────────────┘
+15. Definition of Done
+The demo MVP is complete when a client can see this journey:
+• 
+• 
+• 
+• 
+• 
+9
+"Connect Shopify"
+        ↓
+"My store has $124K revenue"
+        ↓
+"AI found 5 opportunities"
+        ↓
+"Product X should potentially increase in price"
+        ↓
+"Here is the data supporting that recommendation"
+        ↓
+"Here is a customer segment I can target"
+        ↓
+"Here is the campaign the AI recommends"
+        ↓
+"Let me ask the AI what I should do next"
+The AI Recommendations screen is the centerpiece of the demo.
+16. Priority
+P0 — Must Have
+Login
+Demo Shopify/store data
+Dashboard
+AI recommendation engine
+4–5 recommendation types
+Recommendation detail view
+Clean, polished UI
+P1 — Nice to Have
+AI chat
+Shopify OAuth
+Review analysis
+P2 — Do Not Build for Demo
+Everything else.
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+1. 
+2. 
+3. 
+10
+Demo MVP in One Sentence
+A polished Shopify dashboard that uses AI to analyze store data and tell merchants
+what they should optimize next—with evidence and actionable recommendations.
+11

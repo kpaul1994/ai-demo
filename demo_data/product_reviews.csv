@@ -1,0 +1,10 @@
+Product Handle,Product Title,Rating,Reviewer Name,Reviewer Email,Review Title,Review Body,Created At,Verified Buyer
+premium-hoodie,"Premium Hoodie",5,"Marcus Sterling",marcus.s@example.com,"Incredible quality fleece!","Thick fabric, perfect hood shape, and zero shrinkage after multiple cold washes. Easily worth the price.",2026-09-01T14:22:00Z,TRUE
+premium-hoodie,"Premium Hoodie",5,"Sarah Jenkins",sarah.j@example.com,"Best hoodie in my closet","Super soft interior fleece and heavyweight drape. Pairs perfectly with denim.",2026-09-05T18:10:00Z,TRUE
+premium-hoodie,"Premium Hoodie",5,"David Kim",david.k@example.com,"Premium construction","Heavy metal drawstring aglets and thick cuffs. Top tier quality.",2026-09-10T11:45:00Z,TRUE
+running-shoes,"Running Shoes",2,"Chris Evans",chris.e@example.com,"Runs very narrow in the toe box","Good cushioning but the toe box is unusually tight. Order at least half a size up or avoid if you have wide feet.",2026-09-04T09:15:00Z,TRUE
+running-shoes,"Running Shoes",2,"Laura Henderson",laura.h@example.com,"Sizing mismatch & blisters","I always wear US 9, but these felt like an 8.25. Caused blisters on my first 5k run. Disappointed.",2026-09-08T16:30:00Z,TRUE
+running-shoes,"Running Shoes",3,"Daniel Moore",daniel.m@example.com,"Decent midsole, questionable sole rubber","Great foam response but the outer tread started showing wear after only 60km.",2026-09-12T13:20:00Z,TRUE
+denim-jacket,"Denim Jacket",5,"Elena Rostova",elena.r@example.com,"Classic vintage wash","Looks amazing layered over a hoodie. The wash is authentic and fit is relaxed.",2026-09-02T10:00:00Z,TRUE
+running-socks,"Running Socks",5,"Tom Bradley",tom.b@example.com,"Anti-blister magic","No slipping inside the shoe, excellent arch support. Buying more before they run out of stock!",2026-09-07T12:00:00Z,TRUE
+leather-backpack,"Leather Backpack",5,"Rachel Green",rachel.g@example.com,"Outstanding leather craftsmanship","Smells incredible, robust zippers, and fits a 15-inch laptop with room to spare.",2026-09-11T15:40:00Z,TRUE
